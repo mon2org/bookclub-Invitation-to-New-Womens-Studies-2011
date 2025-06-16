@@ -12,7 +12,7 @@
 
 - `docs/` … 読書会についての資料
   - `README.md` … このファイル
-  - [進行について](./bout_facilitation.md)
+  - [進行について](./about_facilitation.md)
   - [録音について](./about_recording.md)   
 - `notes/` … 各回の議事録や配布資料
 
