@@ -1,0 +1,36 @@
+name: 読書会への要望
+description: 読書会に関する要望や提案を記入するためのテンプレート
+title: "【要望】○○について"
+labels: ["request", "feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        読書会に関するご要望やご提案があれば、以下の項目を記入してください。
+
+  - type: textarea
+    id: request
+    attributes:
+      label: 要望・提案内容
+      description: 具体的な要望や提案内容をできるだけ詳しくご記入ください
+      placeholder: 例）次回はオンライン開催にしてほしい、参考資料を共有してほしい、など
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 背景・理由
+      description: この要望・提案を出した理由や背景があればご記入ください
+      placeholder: 例）参加しやすくなるため、議論が深まると思うため、など
+    validations:
+      required: false
+
+  - type: input
+    id: name
+    attributes:
+      label: お名前（任意）
+      description: 回答者名やハンドルネーム（任意）
+      placeholder: 例）Aさん
+    validations:
+      required: false

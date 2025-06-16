@@ -1,0 +1,47 @@
+name: 読書会準備チェックリスト
+description: 読書会開催前の準備事項を管理するためのテンプレート
+title: "【準備】第X回読書会"
+labels: ["preparation", "checklist"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        読書会開催前の準備事項を確認し、必要に応じてチェックを入れてください。
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 準備チェックリスト
+      description: 必要な準備が完了したらチェックを入れてください
+      options:
+        - label: 日時の決定
+        - label: Discordへの案内送信
+        - label: 共有メモの準備
+        - label: オンライン会議URLの発行
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: その他・特記事項
+      description: その他の準備事項や特記事項があれば記入してください
+      placeholder: 例）参考資料のリンク、など
+    validations:
+      required: false
+
+  - type: input
+    id: date
+    attributes:
+      label: 開催予定日
+      description: 読書会の開催予定日を記入してください
+      placeholder: 例）2025-07-20
+    validations:
+      required: true
+
+  - type: textarea
+    id: participants
+    attributes:
+      label: 参加予定者（任意）
+      description: 参加予定者が分かっていれば記入してください
+      placeholder: 例）Aさん、Bさん、Cさん
+    validations:
+      required: false
